@@ -4,7 +4,7 @@ Vagrant.configure("2") do |config|
     web.vm.hostname = "web.vagrant.vm"
     web.vm.provision "shell" do |shell|
       shell.inline = "apt-get update -y"
-      shell.inline = "apt install apache2 -y"
+      shell.inline = "apt-get install apache2 -y"
     end
   end
   

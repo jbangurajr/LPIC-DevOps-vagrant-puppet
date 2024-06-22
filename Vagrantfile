@@ -3,7 +3,7 @@ Vagrant.configure("2") do |config|
     web.vm.box = "hashicorp/bionic64"
     web.vm.hostname = "web.vagrant.vm"
     web.vm.provision "shell" do |shell|
-      shell.inline = "apt update -y"
+      shell.inline = "apt-get update -y"
       shell.inline = "apt install apache2 -y"
     end
   end
